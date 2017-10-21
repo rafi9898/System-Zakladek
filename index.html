@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+
+<html lang="en">
+	<head>
+		<title>MyBookMarks.Eu - Add Your BookMark</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="initial-scale=1.0">
+		<meta name="author" content="Rafał Podraza">
+		<meta name="description" content="MyBookMarks.Eu - Make your bookmarks easy and fun! Win prizes. Everything at your fingertips.">
+		<meta name="keywords" content="Add,page,bookmark,bookmarks,easy, mybookmarks">
+		<link rel="icon" href="img/favicon.ico">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link href="https://fonts.googleapis.com/css?family=Roboto+Slab&amp;subset=latin-ext" rel="stylesheet">
+		<link rel="stylesheet" href="css/animate.css">
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+
+	<body>
+        <!--Navbar-->
+           
+            <nav class="navbar navbar-inverse navbar-fixed-top">
+              <div class="container">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                  </button>
+                  <a class="navbar-brand" href="index.html"><img src="img/logo.png" alt="Logo"></a>
+                  <a class="navbar-brand logo2" href="index.html">Save BookMark's</a>
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                  <ul class="nav navbar-nav">
+                    <li><a href="#top">Home</a></li>
+                    <li><a href="#middle">About</a></li>
+                    <li><a href="#bottom">Contact</a></li>
+
+                  </ul>
+
+                  <ul class="nav navbar-nav navbar-right">
+                    <li><a href="register.php">Sign Up <i class="fa fa-user-plus" aria-hidden="true"></i></a></li>
+                    <li><a href="login.php">Login <i class="fa fa-user" aria-hidden="true"></i></a></li>
+                    </ul>
+                </div><!-- /.navbar-collapse -->
+              </div><!-- /.container-fluid -->
+            </nav>
+            
+            <!--NavBar END-->
+            
+            <!--Section 1-->
+            <section class="first" id="top">
+               <div class="container paddingS1">
+                   <div class="row">
+                       <div class="col-lg-12">
+                           <h1>Bookmark this page</h1>
+                           <p>Thanks to our system you can add and search every page.</p>
+                           <a href="register.php"><button class="btn btn-lg">SIGN UP</button></a>
+                       </div>
+                       
+                       
+                       <div class="col-lg-12">
+                          <div id="arrow">
+                            <a href="#middle"><i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                          </div>
+                       </div>
+                   </div>
+               </div>
+            </section>
+            
+            <!--Section 1 END-->
+            
+            <section class="second" id="middle">
+                <div class="container paddingS2">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <h1 data-animate="slideInUp">
+                                 <div class="typewrite" data-period="2000" data-type='[ "How does the site work?", "Who is the author of the site?", "What do you get?"]'>
+                                  <span class="wrap"></span>
+                                  </div>
+                            </h1>
+                        </div>
+                        
+                        <div class="col-lg-12 coninput">
+                                <div data-animate="pulse" class="console">
+                                  <input type="text">
+                                   <div class="circle"></div>
+                                   <div class="circleClose"> <i class="fa fa-times-circle" aria-hidden="true"></i></div>
+                                    <pre class="typing">$ </pre>
+                                    <p class="infoConsol"></p>
+                                </div>
+                        </div>
+                        
+                        <div class="col-lg-12">
+                            <div class="btnCenter">
+                            <button class="btnInfo btn btn-success btn-lg">Information</button>
+                            <button class="btnConsole btnAttr btn btn-danger btn-lg">Show Console</button>
+                            </div>
+                            <div class="displayInfo">
+                                <h2>Information about Console</h2>
+                                <p><span class="topicInfo">"info"</span> - Information about this page.</p>
+                                <p><span class="topicInfo">"author"</span> - Information about author this page</p>
+                                <p><span class="topicInfo">"clear"</span> - his command clears the console screen</p>
+                                <p><span class="topicInfo">"help"</span> - How to use console</p>
+                            </div>
+                        </div>
+                        
+                        </div>
+                    </div>
+            </section>
+            
+            <!--Section 2 END-->
+            
+        <section class="third" id="bottom">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h1 data-animate="bounce">Contact</h1>
+                    <div data-animate="rollIn" class="contactContainer">
+                     <h3 align="center">Send me a message</h3>
+                      <form  action="https://formspree.io/admin@mybookmarks.eu" method="POST">
+                        <label for="fname">Subject</label>
+                        <input name="_subject" id="fname"><br />
+                        <label for="subject">Message</label>
+                        <textarea id="subject" type="text" name="name" placeholder="Write something.." style="height:150px;margin-bottom:0px;"></textarea>
+                        <label style="float:right;position:relative;padding-bottom:20px">Message</label>
+
+                        <input type="submit" value="Send">
+                      </form>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        
+        <script src="js/jquery-3.2.1.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/jquery.viewportchecker.js"></script>
+        <script src="js/main.js"></script>
+        
+	</body>
+</html>
