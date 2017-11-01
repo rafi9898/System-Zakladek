@@ -7,4 +7,8 @@ Instrukcja Instalacji :
 3. Ustaw dane umożliwiające połączenie się z bazą danych w pliku 'connect.php'
 4. Korzystasj dowoli z systemu MyBookMarks.eu
 
+<img src="https://zapodaj.net/images/05d33db522586.png" alt="Screen">
+
+Demo: http://mybookmarks.eu/
+
 Strona stworzona przez : Rafał Podraza
